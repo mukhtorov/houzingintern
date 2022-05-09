@@ -10,7 +10,7 @@ import {
 } from './style';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { navbar } from '../../utils/navbar';
-import Button from '../Generic/Button';
+import { Button } from '../Generic';
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -38,7 +38,6 @@ export const Navbar = () => {
         </NavbarWrapper>
       </Container>
       <Body>
-        hey
         <Outlet />
       </Body>
     </Wrapper>

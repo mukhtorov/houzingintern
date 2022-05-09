@@ -57,6 +57,7 @@ const Container = styled.div`
 
 const Body = styled.div`
   display: flex;
+  width: 100%;
 `;
 
 const activeStyle = ({ isActive }) => {
