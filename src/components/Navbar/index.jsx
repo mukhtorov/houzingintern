@@ -33,9 +33,7 @@ export const Navbar = () => {
             })}
           </NavbarBody>
           <Logo>
-            <Button type={'primary'} width={'120px'}>
-              Signin
-            </Button>
+            <Button width={'120px'}>Signin</Button>
           </Logo>
         </NavbarWrapper>
       </Container>
