@@ -27,7 +27,10 @@ const Container = styled.input`
   width: ${({ width }) => width || '100%'};
   border-radius: 2px;
   padding-left: ${({ pl }) => pl || '15px'};
-
+  margin-right: ${({ mr }) => `${mr}px`};
+  margin-left: ${({ ml }) => `${ml}px`};
+  margin-top: ${({ mt }) => `${mt}px`};
+  margin-bottom: ${({ mb }) => `${mb}px`};
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -41,6 +44,11 @@ const Wrapper = styled.div`
   display: flex;
   position: relative;
   width: 100%;
+
+  margin-right: ${({ mr }) => `${mr}px`};
+  margin-left: ${({ ml }) => `${ml}px`};
+  margin-top: ${({ mt }) => `${mt}px`};
+  margin-bottom: ${({ mb }) => `${mb}px`};
 `;
 
 const Icon = styled.div`

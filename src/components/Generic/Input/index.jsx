@@ -16,16 +16,12 @@ export const Input = ({
   placeholder,
 }) => {
   return (
-    <Wrapper>
+    <Wrapper mr={mr} ml={ml} mb={mb} mt={mt}>
       <Icon>{children}</Icon>
       <Container
         onChange={onChange}
         placeholder={placeholder}
-        mr={mr}
-        ml={ml}
         pl={pl}
-        mb={mb}
-        mt={mt}
         type={type}
         width={width}
         height={height}
