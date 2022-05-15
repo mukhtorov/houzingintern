@@ -51,13 +51,7 @@ const Container = styled.div`
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-`;
-
-const Body = styled.div`
-  display: flex;
-  width: 100%;
+  user-select: none;
 `;
 
 const activeStyle = ({ isActive }) => {
@@ -72,12 +66,4 @@ const activeStyle = ({ isActive }) => {
   };
 };
 
-export {
-  Container,
-  Wrapper,
-  Body,
-  NavbarWrapper,
-  Logo,
-  NavbarBody,
-  activeStyle,
-};
+export { Container, Wrapper, NavbarWrapper, Logo, NavbarBody, activeStyle };

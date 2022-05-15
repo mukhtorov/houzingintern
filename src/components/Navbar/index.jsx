@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Body,
   Container,
   Logo,
   NavbarBody,
@@ -37,9 +36,7 @@ export const Navbar = () => {
           </Logo>
         </NavbarWrapper>
       </Container>
-      <Body>
-        <Outlet />
-      </Body>
+      <Outlet />
     </Wrapper>
   );
 };

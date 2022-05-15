@@ -1,13 +1,13 @@
 // components
 import Generic from '../pages/Generic';
-import Home from '../pages/Home';
+import Main from '../pages/Main';
 
 export const navbar = [
   {
     id: 1,
     title: 'Home',
     path: '/home',
-    Element: <Home />,
+    Element: <Main />,
     search: '?',
     hidden: false,
     private: false,

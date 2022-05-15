@@ -1,18 +1,13 @@
 import styled from 'styled-components';
 import { Carousel } from 'antd';
-import { ReactComponent as arrow } from '../../assets/icons/carouselArrow.svg';
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
+import { ReactComponent as arrow } from '../../../assets/icons/carouselArrow.svg';
 
 const CarouselWrapper = styled('div')`
   position: relative;
 `;
 const MainCarousel = styled(Carousel)`
-  height: 570px;
+  height: fit-content;
+  /* height: 570px; */
 `;
 
 const Img = styled.img`
@@ -71,4 +66,4 @@ Icon.Right = styled(arrow)`
   }
 `;
 
-export { Container, MainCarousel, CarouselWrapper, Img, Icon };
+export { MainCarousel, CarouselWrapper, Img, Icon };

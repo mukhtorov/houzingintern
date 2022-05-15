@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import 'antd/dist/antd.css';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
