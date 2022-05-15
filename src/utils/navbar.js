@@ -1,3 +1,4 @@
+import React from 'react';
 // components
 import Generic from '../pages/Generic';
 import Main from '../pages/Main';
