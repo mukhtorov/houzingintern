@@ -2,6 +2,7 @@ import React from 'react';
 // components
 import Generic from '../pages/Generic';
 import Main from '../pages/Main';
+import Proporties from '../pages/Proporties';
 
 export const navbar = [
   {
@@ -17,7 +18,7 @@ export const navbar = [
     id: 2,
     title: 'Properties',
     path: '/properties',
-    Element: <Generic />,
+    Element: <Proporties />,
     search: '?',
     hidden: false,
     private: false,

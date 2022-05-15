@@ -8,12 +8,13 @@ import { ReactComponent as resize } from '../../assets/icons/resize.svg';
 
 const Container = styled.div`
   display: flex;
+  overflow: hidden;
   flex-direction: column;
-  max-width: 380px;
-  min-width: 280px;
+  width: 330px;
+  min-width: 230px;
   height: 450px;
   background: #ffffff;
-  margin: 0 1em;
+  margin: ${({ margin }) => margin && '0 1em'};
   margin-bottom: 10px;
   border: 1px solid #e6e9ec;
   border-radius: 3px;
@@ -32,8 +33,11 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
+  min-height: 220px;
+  max-height: 220px;
   width: 100%;
-  height: 220px;
+  /* width: 330px; */
+  /* min-width: 230px; */
 `;
 
 const InfoWrapper = styled.div`
@@ -47,6 +51,7 @@ const InfoWrapper = styled.div`
 const Info = styled.div``;
 
 Info.Title = styled.div`
+  display: flex;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -54,9 +59,15 @@ Info.Title = styled.div`
   line-height: 24px;
   color: #0d263b;
   margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 Info.Text = styled.div`
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;

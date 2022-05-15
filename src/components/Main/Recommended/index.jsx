@@ -5,17 +5,18 @@ import { ArrowLeft, ArrowRight, Cards, Container, Wrapper } from './style';
 import AliceCarousel from 'react-alice-carousel';
 
 export const Generic = () => {
+  const slider = useRef();
+
   const items = [
-    <HouseCard />,
-    <HouseCard />,
-    <HouseCard />,
-    <HouseCard />,
-    <HouseCard />,
-    <HouseCard />,
-    <HouseCard />,
+    <HouseCard margin />,
+    <HouseCard margin />,
+    <HouseCard margin />,
+    <HouseCard margin />,
+    <HouseCard margin />,
+    <HouseCard margin />,
+    <HouseCard margin />,
   ];
 
-  const slider = useRef();
   return (
     <Container className='nocopy'>
       <div className='title center'>Recommended</div>
