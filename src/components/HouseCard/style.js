@@ -10,8 +10,10 @@ const Container = styled.div`
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  width: 330px;
-  min-width: 230px;
+  width: 100%;
+  /* width: 330px; */
+  min-width: 250px;
+  max-width: 380px;
   height: 450px;
   background: #ffffff;
   margin: ${({ margin }) => margin && '0 1em'};

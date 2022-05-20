@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
+import { useLocation } from 'react-router-dom';
 import { useRequest } from '../../hooks/useRequest';
 import Filter from '../Filter';
 import HouseCard from '../HouseCard';
@@ -9,15 +10,20 @@ export const Proporties = () => {
   const [data, setData] = useState([]);
 
   const { request } = useRequest();
+  const { search } = useLocation();
 
-  useQuery('getHouses', () => request({ url: '/v1/houses/list' }), {
-    onSuccess: (res) => {
-      setData(res?.dataList[0]);
-    },
-    // onError: (err) => console.log(err, 'err'),
-    keepPreviousData: true,
-    refetchOnWindowFocus: false,
-  });
+  useQuery(
+    ['getHouses', search],
+    () => request({ url: `/v1/houses/list${search || '?'}` }),
+    {
+      onSuccess: (res) => {
+        setData(res?.dataList[0] || []);
+      },
+      // onError: (err) => console.log(err, 'err'),
+      keepPreviousData: true,
+      refetchOnWindowFocus: false,
+    }
+  );
 
   return (
     <Container>
