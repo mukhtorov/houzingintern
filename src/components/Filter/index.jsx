@@ -22,17 +22,17 @@ export const Generic = () => {
   const minPriceRef = useRef('');
   const maxPriceRef = useRef('');
 
-  const searchQuery = [
-    { key: 'country', value: cuntryRef },
-    { key: 'city', value: cityRef },
-    { key: 'min_price', value: minPriceRef },
-    { key: 'max_price', value: maxPriceRef },
-    { key: 'region', value: regionRef },
-    { key: 'room', value: roomRef },
-    { key: 'zip_code', value: zipRef },
-    { key: 'address', value: addressRef },
-    { key: 'house_name', value: houseNameRef },
-  ];
+  // const searchQuery = [
+  //   { key: 'country', value: cuntryRef },
+  //   { key: 'city', value: cityRef },
+  //   { key: 'min_price', value: minPriceRef },
+  //   { key: 'max_price', value: maxPriceRef },
+  //   { key: 'region', value: regionRef },
+  //   { key: 'room', value: roomRef },
+  //   { key: 'zip_code', value: zipRef },
+  //   { key: 'address', value: addressRef },
+  //   { key: 'house_name', value: houseNameRef },
+  // ];
 
   const onSearch = () => {
     // console.log(searchQuery);
